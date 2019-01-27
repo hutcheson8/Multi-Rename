@@ -3,7 +3,7 @@ public class MRFile {
 	private String originalName;
 
 	public String commandLine(int index) {
-		return "rename " + originalName + ' ' + index + '.' + extension;
+		return "rename \"" + originalName + "\" \"" + index + '.' + extension + '\"';
 	}
 
 	public MRFile(String fileName) {
